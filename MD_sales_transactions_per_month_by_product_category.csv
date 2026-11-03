@@ -1,0 +1,289 @@
+sales_year,sales_month,category,num_transactions,avg_transaction
+2022,1,"Apparel and Merchandise",260,32.004385
+2022,1,"Art Supplies",263,30.896426
+2022,1,"Books (General)",295,36.289186
+2022,1,"Stationery and Supplies",247,10.384858
+2022,1,"Technology & Accessories",287,406.776341
+2022,1,Textbooks,246,177.247236
+2022,2,"Apparel and Merchandise",210,31.296429
+2022,2,"Art Supplies",229,31.054367
+2022,2,"Books (General)",281,30.814270
+2022,2,"Stationery and Supplies",246,10.912967
+2022,2,"Technology & Accessories",287,466.115401
+2022,2,Textbooks,220,176.031636
+2022,3,"Apparel and Merchandise",247,33.786113
+2022,3,"Art Supplies",232,31.238578
+2022,3,"Books (General)",235,32.031277
+2022,3,"Stationery and Supplies",243,10.570206
+2022,3,"Technology & Accessories",319,434.927586
+2022,3,Textbooks,255,179.600588
+2022,4,"Apparel and Merchandise",221,31.822489
+2022,4,"Art Supplies",226,30.272699
+2022,4,"Books (General)",242,28.343099
+2022,4,"Stationery and Supplies",247,11.027814
+2022,4,"Technology & Accessories",271,387.062399
+2022,4,Textbooks,287,176.491185
+2022,5,"Apparel and Merchandise",245,31.685347
+2022,5,"Art Supplies",235,32.374979
+2022,5,"Books (General)",264,31.693295
+2022,5,"Stationery and Supplies",236,10.399449
+2022,5,"Technology & Accessories",290,434.240793
+2022,5,Textbooks,321,186.624735
+2022,6,"Apparel and Merchandise",226,31.678894
+2022,6,"Art Supplies",198,30.451111
+2022,6,"Books (General)",279,30.050179
+2022,6,"Stationery and Supplies",258,10.244651
+2022,6,"Technology & Accessories",264,478.938106
+2022,6,Textbooks,262,181.921565
+2022,7,"Apparel and Merchandise",264,30.766023
+2022,7,"Art Supplies",210,32.000000
+2022,7,"Books (General)",297,34.243199
+2022,7,"Stationery and Supplies",267,10.416217
+2022,7,"Technology & Accessories",303,512.034158
+2022,7,Textbooks,263,183.529240
+2022,8,"Apparel and Merchandise",236,28.958898
+2022,8,"Art Supplies",213,27.671925
+2022,8,"Books (General)",273,30.336520
+2022,8,"Stationery and Supplies",265,11.026981
+2022,8,"Technology & Accessories",303,423.520000
+2022,8,Textbooks,279,183.671685
+2022,9,"Apparel and Merchandise",216,30.622130
+2022,9,"Art Supplies",219,31.660365
+2022,9,"Books (General)",245,30.940204
+2022,9,"Stationery and Supplies",250,9.448120
+2022,9,"Technology & Accessories",238,386.356008
+2022,9,Textbooks,248,175.442056
+2022,10,"Apparel and Merchandise",237,31.936540
+2022,10,"Art Supplies",238,32.466807
+2022,10,"Books (General)",301,33.367508
+2022,10,"Stationery and Supplies",254,10.582756
+2022,10,"Technology & Accessories",282,433.547908
+2022,10,Textbooks,281,178.415872
+2022,11,"Apparel and Merchandise",250,32.504400
+2022,11,"Art Supplies",221,28.248507
+2022,11,"Books (General)",239,29.483389
+2022,11,"Stationery and Supplies",266,11.036466
+2022,11,"Technology & Accessories",288,437.049306
+2022,11,Textbooks,287,181.685296
+2022,12,"Apparel and Merchandise",259,33.985328
+2022,12,"Art Supplies",221,34.319276
+2022,12,"Books (General)",271,32.448303
+2022,12,"Stationery and Supplies",287,10.247213
+2022,12,"Technology & Accessories",291,487.615189
+2022,12,Textbooks,305,184.667508
+2023,1,"Apparel and Merchandise",354,33.889944
+2023,1,"Art Supplies",270,33.073222
+2023,1,"Books (General)",317,37.586215
+2023,1,"Stationery and Supplies",328,10.543811
+2023,1,"Technology & Accessories",382,462.330733
+2023,1,Textbooks,203,168.952956
+2023,2,"Apparel and Merchandise",291,32.534845
+2023,2,"Art Supplies",261,31.903640
+2023,2,"Books (General)",284,29.190035
+2023,2,"Stationery and Supplies",302,10.402583
+2023,2,"Technology & Accessories",339,462.385162
+2023,2,Textbooks,171,170.596140
+2023,3,"Apparel and Merchandise",317,32.869180
+2023,3,"Art Supplies",267,32.658202
+2023,3,"Books (General)",333,30.780120
+2023,3,"Stationery and Supplies",350,10.192171
+2023,3,"Technology & Accessories",317,453.230789
+2023,3,Textbooks,209,171.132201
+2023,4,"Apparel and Merchandise",328,32.138323
+2023,4,"Art Supplies",273,30.515971
+2023,4,"Books (General)",326,31.787147
+2023,4,"Stationery and Supplies",348,10.265287
+2023,4,"Technology & Accessories",381,484.205486
+2023,4,Textbooks,212,170.118066
+2023,5,"Apparel and Merchandise",323,30.622848
+2023,5,"Art Supplies",284,33.255282
+2023,5,"Books (General)",286,32.182762
+2023,5,"Stationery and Supplies",335,10.154507
+2023,5,"Technology & Accessories",349,491.468539
+2023,5,Textbooks,198,165.692677
+2023,6,"Apparel and Merchandise",300,31.368167
+2023,6,"Art Supplies",257,32.430000
+2023,6,"Books (General)",301,32.165548
+2023,6,"Stationery and Supplies",322,9.822143
+2023,6,"Technology & Accessories",332,516.632500
+2023,6,Textbooks,241,172.165602
+2023,7,"Apparel and Merchandise",314,32.776369
+2023,7,"Art Supplies",258,29.939147
+2023,7,"Books (General)",293,31.283652
+2023,7,"Stationery and Supplies",306,10.785588
+2023,7,"Technology & Accessories",338,412.807604
+2023,7,Textbooks,277,175.643682
+2023,8,"Apparel and Merchandise",299,34.006722
+2023,8,"Art Supplies",273,30.897949
+2023,8,"Books (General)",333,33.141652
+2023,8,"Stationery and Supplies",324,10.238920
+2023,8,"Technology & Accessories",325,462.041385
+2023,8,Textbooks,283,177.161095
+2023,9,"Apparel and Merchandise",279,33.627168
+2023,9,"Art Supplies",229,31.063668
+2023,9,"Books (General)",299,32.658027
+2023,9,"Stationery and Supplies",304,10.613586
+2023,9,"Technology & Accessories",335,447.194896
+2023,9,Textbooks,283,170.817102
+2023,10,"Apparel and Merchandise",321,30.681900
+2023,10,"Art Supplies",263,29.712700
+2023,10,"Books (General)",294,29.397823
+2023,10,"Stationery and Supplies",329,10.429970
+2023,10,"Technology & Accessories",363,458.194353
+2023,10,Textbooks,301,172.866877
+2023,11,"Apparel and Merchandise",282,32.719113
+2023,11,"Art Supplies",254,29.179685
+2023,11,"Books (General)",273,31.858242
+2023,11,"Stationery and Supplies",299,10.748227
+2023,11,"Technology & Accessories",370,441.745000
+2023,11,Textbooks,297,168.433805
+2023,12,"Apparel and Merchandise",294,31.855646
+2023,12,"Art Supplies",289,33.198304
+2023,12,"Books (General)",282,32.277021
+2023,12,"Stationery and Supplies",318,11.021981
+2023,12,"Technology & Accessories",351,437.070513
+2023,12,Textbooks,304,167.955855
+2024,1,"Apparel and Merchandise",318,31.691164
+2024,1,"Art Supplies",287,31.615610
+2024,1,"Books (General)",316,29.142310
+2024,1,"Stationery and Supplies",338,10.467781
+2024,1,"Technology & Accessories",366,460.426366
+2024,1,Textbooks,199,172.038643
+2024,2,"Apparel and Merchandise",297,33.429966
+2024,2,"Art Supplies",248,33.557823
+2024,2,"Books (General)",313,30.745335
+2024,2,"Stationery and Supplies",325,10.120615
+2024,2,"Technology & Accessories",299,459.980134
+2024,2,Textbooks,189,170.339471
+2024,3,"Apparel and Merchandise",339,32.293894
+2024,3,"Art Supplies",281,30.422420
+2024,3,"Books (General)",337,31.845341
+2024,3,"Stationery and Supplies",358,10.240531
+2024,3,"Technology & Accessories",393,491.360204
+2024,3,Textbooks,215,170.540000
+2024,4,"Apparel and Merchandise",312,30.400385
+2024,4,"Art Supplies",276,33.429928
+2024,4,"Books (General)",275,32.127273
+2024,4,"Stationery and Supplies",325,10.178369
+2024,4,"Technology & Accessories",337,483.383531
+2024,4,Textbooks,195,165.159385
+2024,5,"Apparel and Merchandise",306,31.381536
+2024,5,"Art Supplies",269,32.415799
+2024,5,"Books (General)",315,31.705905
+2024,5,"Stationery and Supplies",336,9.976667
+2024,5,"Technology & Accessories",344,506.749477
+2024,5,Textbooks,249,172.359598
+2024,6,"Apparel and Merchandise",308,32.790519
+2024,6,"Art Supplies",246,29.833171
+2024,6,"Books (General)",279,31.758351
+2024,6,"Stationery and Supplies",292,10.653973
+2024,6,"Technology & Accessories",326,419.414540
+2024,6,Textbooks,269,175.567546
+2024,7,"Apparel and Merchandise",299,34.006722
+2024,7,"Art Supplies",273,30.897949
+2024,7,"Books (General)",333,33.141652
+2024,7,"Stationery and Supplies",324,10.238920
+2024,7,"Technology & Accessories",325,462.041385
+2024,7,Textbooks,283,177.161095
+2024,8,"Apparel and Merchandise",289,33.111903
+2024,8,"Art Supplies",239,31.383305
+2024,8,"Books (General)",306,32.400163
+2024,8,"Stationery and Supplies",316,10.688133
+2024,8,"Technology & Accessories",346,447.798873
+2024,8,Textbooks,291,170.321340
+2024,9,"Apparel and Merchandise",311,31.066013
+2024,9,"Art Supplies",253,29.357352
+2024,9,"Books (General)",287,29.593240
+2024,9,"Stationery and Supplies",317,10.348707
+2024,9,"Technology & Accessories",352,457.944403
+2024,9,Textbooks,293,173.415222
+2024,10,"Apparel and Merchandise",293,32.902184
+2024,10,"Art Supplies",267,29.420375
+2024,10,"Books (General)",282,31.825000
+2024,10,"Stationery and Supplies",303,10.729241
+2024,10,"Technology & Accessories",378,438.294259
+2024,10,Textbooks,310,167.936097
+2024,11,"Apparel and Merchandise",283,31.632544
+2024,11,"Art Supplies",276,33.154746
+2024,11,"Books (General)",273,32.325165
+2024,11,"Stationery and Supplies",314,11.043790
+2024,11,"Technology & Accessories",343,440.764344
+2024,11,Textbooks,291,168.464708
+2024,12,"Apparel and Merchandise",354,33.889944
+2024,12,"Art Supplies",270,33.073222
+2024,12,"Books (General)",317,37.586215
+2024,12,"Stationery and Supplies",328,10.543811
+2024,12,"Technology & Accessories",382,462.330733
+2024,12,Textbooks,203,168.952956
+2025,1,"Apparel and Merchandise",475,33.746063
+2025,1,"Art Supplies",408,34.943407
+2025,1,"Books (General)",460,33.595370
+2025,1,"Stationery and Supplies",566,10.276113
+2025,1,"Technology & Accessories",416,500.491899
+2025,1,Textbooks,106,170.883679
+2025,2,"Apparel and Merchandise",430,34.746535
+2025,2,"Art Supplies",366,30.421913
+2025,2,"Books (General)",410,33.599049
+2025,2,"Stationery and Supplies",443,10.146975
+2025,2,"Technology & Accessories",380,524.805447
+2025,2,Textbooks,113,164.129735
+2025,3,"Apparel and Merchandise",424,33.087099
+2025,3,"Art Supplies",369,37.830840
+2025,3,"Books (General)",451,35.426120
+2025,3,"Stationery and Supplies",477,10.711174
+2025,3,"Technology & Accessories",439,485.466355
+2025,3,Textbooks,179,176.135140
+2025,4,"Apparel and Merchandise",483,30.859213
+2025,4,"Art Supplies",390,35.594128
+2025,4,"Books (General)",415,33.338434
+2025,4,"Stationery and Supplies",583,10.783345
+2025,4,"Technology & Accessories",254,456.423307
+2025,4,Textbooks,236,178.568898
+2025,5,"Apparel and Merchandise",479,31.474447
+2025,5,"Art Supplies",392,35.418571
+2025,5,"Books (General)",456,31.232390
+2025,5,"Stationery and Supplies",542,10.313690
+2025,5,"Technology & Accessories",267,523.384457
+2025,5,Textbooks,217,171.606866
+2025,6,"Apparel and Merchandise",475,32.156568
+2025,6,"Art Supplies",399,34.116767
+2025,6,"Books (General)",426,31.787535
+2025,6,"Stationery and Supplies",474,10.261751
+2025,6,"Technology & Accessories",265,504.608038
+2025,6,Textbooks,212,169.669434
+2025,7,"Apparel and Merchandise",420,29.940071
+2025,7,"Art Supplies",338,35.989438
+2025,7,"Books (General)",390,33.489538
+2025,7,"Stationery and Supplies",482,10.527967
+2025,7,"Technology & Accessories",478,486.276506
+2025,7,Textbooks,207,169.141691
+2025,8,"Apparel and Merchandise",418,32.714306
+2025,8,"Art Supplies",305,32.983377
+2025,8,"Books (General)",357,33.864706
+2025,8,"Stationery and Supplies",436,10.790528
+2025,8,"Technology & Accessories",497,464.527706
+2025,8,Textbooks,237,171.097004
+2025,9,"Apparel and Merchandise",360,32.177222
+2025,9,"Art Supplies",322,34.220373
+2025,9,"Books (General)",356,31.918736
+2025,9,"Stationery and Supplies",436,10.762362
+2025,9,"Technology & Accessories",470,495.129872
+2025,9,Textbooks,198,166.341061
+2025,10,"Apparel and Merchandise",490,31.457980
+2025,10,"Art Supplies",402,32.050423
+2025,10,"Books (General)",394,35.513122
+2025,10,"Stationery and Supplies",487,10.338234
+2025,10,"Technology & Accessories",558,476.834104
+2025,10,Textbooks,274,168.980620
+2025,11,"Apparel and Merchandise",401,32.229776
+2025,11,"Art Supplies",338,32.819763
+2025,11,"Books (General)",357,29.535910
+2025,11,"Stationery and Supplies",455,10.558967
+2025,11,"Technology & Accessories",477,490.500545
+2025,11,Textbooks,190,162.420368
+2025,12,"Apparel and Merchandise",410,31.119902
+2025,12,"Art Supplies",357,31.574370
+2025,12,"Books (General)",387,31.096848
+2025,12,"Stationery and Supplies",467,9.876938
+2025,12,"Technology & Accessories",539,461.286456
+2025,12,Textbooks,250,171.273480
