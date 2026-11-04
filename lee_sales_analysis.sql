@@ -105,6 +105,18 @@ WHERE sl.state = 'Maryland'
 GROUP BY sales_month, sales_year, category
 Order by sales_year, sales_month, category; 
 -- ANSWER: saved as csv file
+# Collecting category perfomance without North Harford for analysis 
+SELECT i.category                  AS category,
+	   COUNT(*)                    AS num_trancations,
+       AVG(ss.sale_amount)        AS total_revenue
+FROM store_sales ss
+JOIN store_locations sl ON ss.store_id = sl.storeid
+JOIN products p ON ss.prod_num = p.prodnum
+JOIN inventory_categories i ON p.categoryid = i.categoryid
+WHERE sl.state = 'Maryland'
+AND sl.storelocation != 'North Harford' 
+GROUP BY i.category
+ORDER BY total_revenue DESC;
 -- Q5 Provide a Ranking of in store sales performance by each store in MD.
 SELECT * FROM store_locations WHERE state = 'Maryland';
 # Maryland is an in-store territory so stores are ranked. 
