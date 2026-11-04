@@ -19,16 +19,14 @@ FROM management;
 -- Sales Manager of the MD sales department wants to know:
 /* Q1 Total Revenue overall for sales in MD. Start and End Date that tells the period 
  of data coverage.  
- ANSWER: 
- TOTAL REVENUE: '11451615.09' START DATE: 2022-01-01 END DATE: 2025-12-31
 */ 
 SELECT SUM(ss.sale_amount) AS total_revenue,
 	   MIN(ss.Transaction_Date) AS start_date, 
        MAX(ss.transaction_date) AS end_date
 FROM store_sales ss
 JOIN store_locations sl ON ss.store_id = sl.storeid
-WHERE state = 'Maryland'; 
--- ANSWER: TOTAL REVENUE - '11451615.09' START DATE: 2022-01-01 END DATE: 2025-12-31 
+WHERE sl.state = 'Maryland'; 
+-- ANSWER: TOTAL REVENUE - '11,451,615.09' START DATE: 2022-01-01 END DATE: 2025-12-31 
 DESCRIBE store_sales; 
 /* To find the date type which is Transaction_Date I described store sales and completed Q1 by adding the min and max
 within the syntax for Q1. */ 
@@ -43,12 +41,56 @@ GROUP BY sales_year, sales_month
 ORDER BY sales_year, sales_month;  
 -- ANSWER: created csv file of data
 -- Q3. Comparison of Total Revenue for MD and the Northeast Region  
-SELECT SUM(ss.sale_amount)   AS region_revenue
+SELECT SUM(ss.sale_amount)   AS northeast_revenue
 FROM store_sales ss
 JOIN store_locations sl ON ss.store_id = sl.storeid 
 JOIN management m ON sl.state = m.state 
 WHERE m.region = 'Northeast';
--- Answer: Total Revenue For Northeast Region: '24237526.98' 
+-- Answer: Total Revenue For Northeast Region: '24,237,526.98' 
+-- ================================================================================================
+-- Troubleshooting for Q3 (Somehow the state of Maryland has a higher total revenue than the region it belongs in.)
+SELECT *
+FROM management
+ORDER BY region; 
+-- Confirmed I was using the correct region name
+SELECT DISTINCT m.region AS region_value, LENGTH(m.region) AS len
+FROM management m;
+-- Confirmed no misspelling region values or hidden spaces
+SELECT *
+FROM management
+WHERE state = 'Maryland';
+-- Confirmed Maryland row is identical in region
+SELECT m.state,
+       m.region AS region,
+       SUM(ss.sale_amount) AS revenue
+FROM   store_sales ss
+JOIN   store_locations sl ON ss.store_id = sl.storeid
+JOIN   management m ON sl.state = m.state
+GROUP BY m.state, m.region
+ORDER BY region, m.state; 
+-- Confirmed which states were in the region with MD. To discover and conclude that my sum was correct just had an error in typing out the numbers which has been resolved. 
+/* ANSWER:
+Maryland Revenue: 11,451,615.09
+Northeast Revenue: 24,237,526.98
+Maryland Share: 47.25 %
+*/
+SELECT maryland_revenue,
+       northeast_revenue,
+       ROUND(maryland_revenue / northeast_revenue * 100, 2) AS maryland_share_prcnt
+FROM (
+	SELECT
+     (SELECT SUM(ss.sale_amount)
+     FROM store_sales ss 
+     JOIN store_locations sl ON ss.store_id =sl.storeid
+     WHERE sl.state = 'Maryland')                              AS maryland_revenue,
+     (SELECT SUM(ss.sale_amount)
+     FROM store_sales ss
+     JOIN store_locations sl ON ss.store_id = sl.storeid
+     JOIN management m ON sl.state = m.state
+     WHERE m.region = 'Northeast')                             AS northeast_revenue
+     ) AS totals;
+-- Created a subqurey to calculate the percentage of revenue MD produces for the Northeast Region. 
+# Percentage added to original ANSWER above 
 -- 	Q4. Number of transactions per month. Average transaction amount by product category for MD Sales.
 SELECT YEAR(ss.transaction_date)   AS sales_year,
 	   MONTH(ss.transaction_date)  AS sales_month, 
@@ -73,7 +115,23 @@ FROM store_sales ss
 JOIN store_locations sl ON ss.store_id = sl.storeid
 WHERE sl.state = 'Maryland'
 GROUP BY sl.storelocation, sl.storeid
-ORDER BY total_revenue DESC;
+ORDER BY total_revenue DESC; 
+-- =============================================================================
+# Quick troubleshooting and run check on the North Hartford location due to its unusal revenue amount.
+SELECT *
+FROM store_locations
+WHERE storelocation = 'North Harford';
+-- Was provided with store name, locatin and store id but no reason on the revenue. Will check sales. 
+SELECT sl.storelocation,
+       COUNT(*)                   AS num_transactions,
+       AVG(ss.sale_amount)        AS avg_sale,
+       SUM(ss.sale_amount)        AS total_revenue
+FROM store_sales ss
+JOIN store_locations sl ON ss.store_id = sl.storeid
+WHERE sl.state = 'Maryland'
+GROUP BY sl.storelocation
+ORDER BY total_revenue DESC; 
+-- Discovered though North Harford ia labeled in store there is no specifics other than volume to conclude why total revenue dominates the other. 
 -- Q6 Reccomendation for where to focus sales attention in the next quarter. 
 -- ================ RECOMMENDATION ==================================
 #
