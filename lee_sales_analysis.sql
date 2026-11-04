@@ -39,7 +39,7 @@ JOIN store_locations sl ON ss.store_id = sl.storeid
 WHERE sl.state = 'Maryland' 
 GROUP BY sales_year, sales_month
 ORDER BY sales_year, sales_month;  
--- ANSWER: created csv file of data
+-- ANSWER: saved as csv file
 -- Q3. Comparison of Total Revenue for MD and the Northeast Region  
 SELECT SUM(ss.sale_amount)   AS northeast_revenue
 FROM store_sales ss
@@ -89,7 +89,7 @@ FROM (
      JOIN management m ON sl.state = m.state
      WHERE m.region = 'Northeast')                             AS northeast_revenue
      ) AS totals;
--- Created a subqurey to calculate the percentage of revenue MD produces for the Northeast Region. 
+-- Created a subquery to calculate the percentage of revenue MD produces for the Northeast Region. 
 # Percentage added to original ANSWER above 
 -- 	Q4. Number of transactions per month. Average transaction amount by product category for MD Sales.
 SELECT YEAR(ss.transaction_date)   AS sales_year,
@@ -128,12 +128,13 @@ JOIN store_locations sl ON ss.store_id = sl.storeid
 WHERE sl.state = 'Maryland'
 GROUP BY sl.storelocation, sl.storeid
 ORDER BY total_revenue DESC; 
+-- ANSWER: saved as csv file
 -- =============================================================================
 # Quick troubleshooting and run check on the North Hartford location due to its unusal revenue amount.
 SELECT *
 FROM store_locations
 WHERE storelocation = 'North Harford';
--- Was provided with store name, locatin and store id but no reason on the revenue. Will check sales. 
+-- Was provided with store name, location and store id but no reason on the revenue. Will check sales. 
 SELECT sl.storelocation,
        COUNT(*)                   AS num_transactions,
        AVG(ss.sale_amount)        AS avg_sale,
@@ -143,7 +144,7 @@ JOIN store_locations sl ON ss.store_id = sl.storeid
 WHERE sl.state = 'Maryland'
 GROUP BY sl.storelocation
 ORDER BY total_revenue DESC; 
--- Discovered though North Harford ia labeled in store there is no specifics other than volume to conclude why total revenue dominates the other. 
+-- Discovered though North Harford ia labeled in store there is no specifics other than volume to conclude why total revenue dominates the other stores. 
 -- Q6 Reccomendation for where to focus sales attention in the next quarter. 
 -- ================ RECOMMENDATION ==================================
 #
